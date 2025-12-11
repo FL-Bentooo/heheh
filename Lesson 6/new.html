@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buổi học 6</title>
+</head>
+<body>
+  <h1>Buổi học 6</h1>
+
+  <button id="button1">Click me!</button>
+  <p id="text">Đoạn văn</p>
+  <button id="changeColor">Đổi màu chữ</button>
+
+  <hr>
+  <button id="increaseBtn">Tăng</button>
+  <button id="decreaseBtn">Giảm</button>
+  <button id="resetBtn">Reset</button>
+  <div id="counter">0</div>
+
+  <script>
+    document.getElementById('button1').onclick = function() {
+      alert('xin chao ban')
+    }
+    document.getElementById('changeColor').onclick = function() {
+      const text = document.getElementById('text')
+      text.style.color = 'red'
+      text.style.fontSize = '20px'
+    }
+    let count = 0
+    const counter = document.getElementById('counter')
+
+    document.getElementById('increaseBtn').onclick = function() {
+      count++
+      counter.textContent = count
+    }
+    document.getElementById('decreaseBtn').onclick = function() {
+        count--
+        counter.textContent = count
+    }
+
+    document.getElementById('resetBtn').onclick = function() {
+      count = 0
+      counter.textContent = count
+    }
+  </script>
+</body>
+</html>

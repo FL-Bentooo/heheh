@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6ec6ff, #5a9cff);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #333;
+}
+
+
+.container {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    width: 100%;
+    max-width: 380px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    animation: fadeIn 0.4s ease;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    margin-bottom: 15px;
+    color: #004a99;
+}
+
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #b4d4ff;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    outline: none;
+    transition: 0.2s;
+}
+
+
+input:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    margin: 6px 0;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+
+button:nth-of-type(1) {
+    background: #4a90e2;
+    color: white;
+}
+
+button:nth-of-type(1):hover {
+    background: #3472b8;
+}
+
+
+button:nth-of-type(2) {
+    background: #ffcc33;
+}
+
+button:nth-of-type(2):hover {
+    background: #e6b62e;
+}
+
+
+#weatherResult {
+    margin-top: 18px;
+    font-size: 18px;
+    padding: 12px;
+    background: #f0f7ff;
+    border-radius: 8px;
+    min-height: 40px;
+}
+
+
+@media (max-width: 450px) {
+    .container {
+        padding: 18px;
+        max-width: 95%;
+    }
+
+
+    h1 {
+        font-size: 22px;
+    }
+}
